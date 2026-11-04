@@ -4,73 +4,376 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="description"
+        content="Filipe Angelo's Computer Science ePortfolio,
+        showcasing software engineering, algorithms,
+        data structures, and database development.">
+
   <title>Filipe Angelo | Computer Science ePortfolio</title>
+
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      max-width: 900px;
-      margin: 60px auto;
-      padding: 0 24px;
-      line-height: 1.7;
-      color: #263238;
+    /* General page styling */
+    * {
+      box-sizing: border-box;
     }
-    h1, h2 { color: #17365d; }
-    a { color: #1769aa; }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 0;
+      background-color: #f8fafc;
+      color: #263238;
+      line-height: 1.7;
+    }
+
+    /* Main page container */
+    .container {
+      max-width: 950px;
+      margin: 0 auto;
+      padding: 40px 24px;
+    }
+
+    /* Header */
+    header {
+      text-align: center;
+      padding: 45px 20px;
+      background-color: #17365d;
+      color: white;
+    }
+
+    header h1 {
+      font-size: 36px;
+      margin: 0 0 10px;
+    }
+
+    header p {
+      font-size: 16px;
+      margin: 0;
+      color: #e2e8f0;
+    }
+
+    /* Section headings */
+    h2 {
+      color: #17365d;
+      font-size: 25px;
+      margin-top: 35px;
+      margin-bottom: 15px;
+    }
+
+    h3 {
+      color: #263238;
+      font-size: 20px;
+      margin-top: 0;
+      margin-bottom: 8px;
+    }
+
+    /* About section */
+    .about {
+      margin-bottom: 40px;
+    }
+
+    /* Project cards */
     .project {
-      padding: 18px;
-      margin: 18px 0;
-      border: 1px solid #ddd;
+      background: white;
+      border: 1px solid #e2e8f0;
       border-radius: 10px;
+      padding: 25px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+    }
+
+    .category {
+      color: #1769aa;
+      font-size: 13px;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 10px;
+    }
+
+    .project-name {
+      font-weight: bold;
+      margin: 10px 0;
+    }
+
+    .project-description {
+      color: #52616b;
+      font-size: 15px;
+    }
+
+    /* Project links */
+    .project a {
+      display: inline-block;
+      margin-top: 12px;
+      padding: 9px 16px;
+      background-color: #1769aa;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+      font-size: 14px;
+    }
+
+    .project a:hover {
+      background-color: #104d80;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      background-color: #17365d;
+      color: white;
+      padding: 22px;
+      font-size: 14px;
+      margin-top: 40px;
+    }
+
+    footer a {
+      color: #dbeafe;
+    }
+
+    /* Mobile responsiveness */
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 28px;
+      }
+
+      header p {
+        font-size: 14px;
+      }
+
+      .container {
+        padding: 25px 18px;
+      }
+
+      .project {
+        padding: 20px;
+      }
     }
   </style>
 </head>
+
 <body>
+
+  <!-- Portfolio Header -->
   <header>
     <h1>Filipe Angelo</h1>
-    <p>Computer Science | Software Engineering | Full-Stack Development</p>
+    <p>
+      Computer Science | Software Engineering |
+      Full-Stack Development
+    </p>
+    <p>
+      Southern New Hampshire University
+    </p>
   </header>
 
-  <section>
-    <h2>About Me</h2>
-    <p>
-      Welcome to my computer science ePortfolio. I am pursuing
-      my Bachelor of Science in Computer Science at Southern
-      New Hampshire University, concentrating in Software Engineering.
-      My interests include full-stack development, software design,
-      cybersecurity, and mobile application development.
-    </p>
-  </section>
+  <main class="container">
 
-  <section>
-    <h2>CS 499 Capstone Projects</h2>
+    <!-- About Me -->
+    <section class="about">
+      <h2>About Me</h2>
 
-    <div class="project">
-      <h3>Software Engineering and Design</h3>
-      <p>CS 230 - The Gaming Room</p>
-      <a href="https://github.com/lipeangelo/CS-230-Operating-Platforms">
-        View Project
-      </a>
-    </div>
+      <p>
+        Welcome to my Computer Science ePortfolio.
+        I am pursuing a Bachelor of Science in Computer
+        Science with a concentration in Software Engineering
+        at Southern New Hampshire University (SNHU).
+        I also hold associate degrees in Computer Technology
+        and Cybersecurity.
+      </p>
 
-    <div class="project">
-      <h3>Algorithms and Data Structures</h3>
-      <p>CS 210 - Corner Grocer</p>
-      <a href="https://github.com/lipeangelo/CS210-Corner-Grocer-Project">
-        View Project
-      </a>
-    </div>
+      <p>
+        My interests include software engineering, full-stack
+        development, cybersecurity, mobile application
+        development, and game development.
+        I enjoy designing applications, solving technical
+        problems, and exploring new technologies.
+      </p>
 
-    <div class="project">
-      <h3>Databases</h3>
-      <p>CS 465 - Travlr Getaways</p>
-      <a href="https://github.com/lipeangelo/CS-465-Full-Stack-Development-I">
-        View Project
-      </a>
-    </div>
-  </section>
+      <p>
+        This ePortfolio highlights my academic projects,
+        technical skills, and continued growth as a software
+        developer. Through my CS 499 Computer Science
+        Capstone, I will enhance selected projects to
+        demonstrate my knowledge of software engineering,
+        algorithms and data structures, and databases.
+      </p>
+    </section>
 
+    <!-- Capstone Projects -->
+    <section>
+      <h2>CS 499: Computer Science Capstone</h2>
+
+      <p>
+        The following projects represent three key areas
+        of computer science. Each project will be enhanced
+        throughout the capstone course to demonstrate
+        technical proficiency, problem-solving abilities,
+        and software development best practices.
+      </p>
+
+      <!-- Project One -->
+      <article class="project">
+
+        <div class="category">
+          Software Engineering and Design
+        </div>
+
+        <h3>CS 230: Operating Platforms</h3>
+
+        <p class="project-name">
+          Project: The Gaming Room
+        </p>
+
+        <p class="project-description">
+          A Java-based game management application
+          demonstrating object-oriented programming,
+          software architecture, and design patterns,
+          including the Singleton and Iterator patterns.
+        </p>
+
+        <p class="project-description">
+          Planned Enhancement: Improve application
+          architecture, strengthen input validation,
+          expand game-management functionality,
+          and implement automated testing.
+        </p>
+
+        <a href="https://github.com/lipeangelo/CS-230-Operating-Platforms"
+           target="_blank"
+           rel="noopener noreferrer">
+          View GitHub Repository
+        </a>
+
+      </article>
+
+      <!-- Project Two -->
+      <article class="project">
+
+        <div class="category">
+          Algorithms and Data Structures
+        </div>
+
+        <h3>CS 210: Programming Languages</h3>
+
+        <p class="project-name">
+          Project: Corner Grocer
+        </p>
+
+        <p class="project-description">
+          A C++ application that analyzes grocery
+          purchase records, calculates item frequencies,
+          and displays inventory information through
+          text-based reports and histograms.
+        </p>
+
+        <p class="project-description">
+          Planned Enhancement: Improve data-processing
+          efficiency, optimize search operations,
+          and introduce more advanced data structures
+          for inventory management.
+        </p>
+
+        <a href="https://github.com/lipeangelo/CS210-Corner-Grocer-Project"
+           target="_blank"
+           rel="noopener noreferrer">
+          View GitHub Repository
+        </a>
+
+      </article>
+
+      <!-- Project Three -->
+      <article class="project">
+
+        <div class="category">
+          Databases
+        </div>
+
+        <h3>CS 465: Full Stack Development I</h3>
+
+        <p class="project-name">
+          Project: Travlr Getaways
+        </p>
+
+        <p class="project-description">
+          A full-stack travel application developed
+          using MongoDB, Express.js, Angular, and
+          Node.js (MEAN stack). The application
+          includes a customer-facing website,
+          administrative functionality, RESTful APIs,
+          and database integration.
+        </p>
+
+        <p class="project-description">
+          Planned Enhancement: Strengthen database
+          operations, improve data validation,
+          optimize queries, and enhance API security
+          and error handling.
+        </p>
+
+        <a href="https://github.com/lipeangelo/CS-465-Full-Stack-Development-I"
+           target="_blank"
+           rel="noopener noreferrer">
+          View GitHub Repository
+        </a>
+
+      </article>
+
+    </section>
+
+    <!-- Technical Skills -->
+    <section>
+      <h2>Technical Skills</h2>
+
+      <p>
+        <strong>Programming Languages:</strong>
+        Java, C++, C#, Python, JavaScript, SQL
+      </p>
+
+      <p>
+        <strong>Web and Mobile Development:</strong>
+        HTML, CSS, Angular, React, Node.js,
+        Express.js, React Native, Flutter
+      </p>
+
+      <p>
+        <strong>Databases:</strong>
+        MySQL, MongoDB, Firebase
+      </p>
+
+      <p>
+        <strong>Development Tools:</strong>
+        Git, GitHub, Visual Studio Code,
+        IntelliJ IDEA, Android Studio
+      </p>
+    </section>
+
+    <!-- Contact -->
+    <section>
+      <h2>Connect With Me</h2>
+
+      <p>
+        GitHub:
+        <a href="https://github.com/lipeangelo"
+           target="_blank"
+           rel="noopener noreferrer">
+          github.com/lipeangelo
+        </a>
+      </p>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
   <footer>
-    <p>CS 499 Computer Science Capstone | SNHU</p>
+    <p>
+      Filipe Angelo | CS 499 Computer Science Capstone
+    </p>
+
+    <p>
+      Southern New Hampshire University
+    </p>
   </footer>
+
 </body>
 </html>
